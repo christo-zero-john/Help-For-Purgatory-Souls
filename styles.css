@@ -107,7 +107,6 @@
 
 *{
   font-family: 'changa', sans-serif;
-  font-size: 1.2rem;
 }
 
 .navHead{
@@ -118,10 +117,18 @@
   font-weight: 200;
 }
 
+.superHero{
+  border-radius: 10px;
+}
+
 .hero{
   min-height: 88vh;
-  font-size: 1.5rem;
   font-weight: 600;
+  opacity: 0.8;
+}
+
+.heroHead{
+  opacity: 0.4;
 }
 
 .heroImgDiv{
@@ -129,12 +136,26 @@
   width: fit-content;
   height: fit-content;
   border-radius: 4px;
-  padding: 2px;
-  scale: 0.9;
+  scale: 0.8;
 }
 
 .heroImg{
   border: 2px ridge rgb(0, 255, 247);
   border-radius: 12px;
   opacity: 0.8;
+}
+
+.heroImgSmall{
+    border: 2px ridge rgb(0, 255, 247);
+    border-radius: 50;
+    opacity: 0.8;
+
+}
+
+.heroBtn:hover{
+  color: #000;
+}
+.carousel-item{
+    min-height: 89vh;
+    padding: 2%;
 }
