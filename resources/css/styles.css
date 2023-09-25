@@ -1,3 +1,19 @@
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+  
 /* Fonts */
 /* Anek-Malayalam */
 @font-face {
@@ -5,19 +21,19 @@
     src: url(/resources/fonts/Anek_Malayalam/AnekMalayalam-VariableFont_wdth\,wght.ttf);
 }
 
-/* Oswald English */
+/* Font-changa english */
 @font-face {
-    font-family: 'oswald';
-    src: url();
-}
-
+    font-family: 'changa';
+    src: url(../fonts/Changa/Changa-VariableFont_wght.ttf);
+  }
+  
 /* font classes */
-.font-malayalam{
+.malayalam{
     font-family: 'anek-ml',sans-serif;
 }
 
-.font-english{
-    font-family: 'oswald',sans-serif;
+.english{
+    font-family: 'changa',sans-serif;
 }
 
 /* font-weights */
@@ -52,20 +68,15 @@
     font-weight: 1000;
 }
 
-/* backgrounds */
+/* Common */
+.bold{
+  font-weight: 400;
+}
+  
 
-/* text-color */
-.t-white{
-    color: white;
-}
-.t-black{
-    color: black;
-}
-
-/* box-shadow */
-.bs1{
-    box-shadow: 0 0 5px 0px black;
-}
+*{
+    font-family: 'changa', sans-serif;
+  }
 
 body{
     padding: 0;
@@ -73,31 +84,62 @@ body{
     font-weight: 500;
     height: fit-content;
 }
-.menubar{
-    overflow: auto;
-    width: 100vw;
-}
-.menubar a{
-    text-decoration: none;
-    margin: 10px 20px;
-    text-align: center;
-    border-radius: 5px;
-    min-height: 80px;
-    transform: color 5s, background-color 5s;
+
+  
+.navHead{
+  text-decoration: none;
+  font-family: 'changa',sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
-
-
-/* prayer Room */
-.prayerRoomGIF{
-    max-width: 98vw;
-    border-radius: 13px;
-    margin: 10px 0;
+.nav-item a{
+  color: black !important;
+  transition: opacity 0.3s;
 }
-.prayerForThem{
-    padding: 2vw;
+
+.nav-item a:hover{
+  opacity: 0.6;
 }
-.prayerToThem{
-    margin: 0;
-    padding: 2vw;
+
+.superHero{
+  color: black;
+}
+
+.hero{
+  min-height: 88vh;
+  font-weight: 600;
+}
+
+.heroHead{
+  opacity: 0.7;
+  letter-spacing: 0.2rem;
+}
+
+.heroImgDiv{
+  background-color: rgb(0, 0, 0);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4px;
+}
+
+.heroImg{
+  border: 2px ridge rgb(0, 255, 247);
+  border-radius: 12px;
+  opacity: 0.8;
+}
+
+.heroImgSmall{
+    border: 2px ridge rgb(0, 255, 247);
+    border-radius: 50;
+    opacity: 0.8;
+
+}
+
+.heroBtn:hover{
+  color: #ffffff;
+}
+.carousel-item{
+    min-height: 89vh;
+    padding: 2%;
 }
