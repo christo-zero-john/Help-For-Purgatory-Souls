@@ -117,10 +117,6 @@
   font-weight: 200;
 }
 
-.superHero{
-  border-radius: 10px;
-}
-
 .hero{
   min-height: 88vh;
   font-weight: 600;
@@ -136,7 +132,6 @@
   width: fit-content;
   height: fit-content;
   border-radius: 4px;
-  scale: 0.8;
 }
 
 .heroImg{
@@ -153,7 +148,7 @@
 }
 
 .heroBtn:hover{
-  color: #000;
+  color: #ffffff;
 }
 .carousel-item{
     min-height: 89vh;
