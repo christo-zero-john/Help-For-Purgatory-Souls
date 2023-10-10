@@ -144,41 +144,17 @@ body{
     padding: 2%;
 }
 
-.f-large
-{
-    font-size: large;
-}
-
-.text-black-75{
-  color: #000;
-  opacity: 0.75;
-}
-
 .aboutThem{
-  line-height: 2rem;
+  padding: 5vw;
+}
+.aboutThem .mainHeading{
+  font-size: 2rem;
 }
 
-.aboutThemMain{
-    width: 95%;
-    text-wrap: wrap;
-}
-
-.aboutThemMain h1{
+.aboutThem h2{
   font-size: 1.5rem;
 }
 
-.aboutThemMain h2{
+.aboutThem p{
   font-size: 1rem;
-}
-
-.aboutThemMain p{
-  font-size: 1rem;
-}
-
-.aboutThemParagraph{
-  font-size: 1.2rem;
-}
-
-.aboutThemMainHead{
-    font-size: 1.5rem;
 }
