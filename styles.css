@@ -160,6 +160,19 @@ body{
 
 .aboutThemMain{
     width: 95%;
+    text-wrap: wrap;
+}
+
+.aboutThemMain h1{
+  font-size: 1.5rem;
+}
+
+.aboutThemMain h2{
+  font-size: 1rem;
+}
+
+.aboutThemMain p{
+  font-size: 1rem;
 }
 
 .aboutThemParagraph{
