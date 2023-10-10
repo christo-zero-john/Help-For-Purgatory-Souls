@@ -9,17 +9,17 @@ var headerText = `
     <ul class="navbar-nav mx-auto">
 
         <li class="nav-item">
-            <a class="nav-link navLink" href="/index.html">Home</a>
+            <a class="nav-link navLink" href="~/index.html">Home</a>
         </li>
 
       <li class="nav-item">
         <a class="nav-link navLink" href="#">Prayer Room</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/sitepages/main/aboutThem.html">Purgatory Souls</a>
+        <a class="nav-link" href="~sitepages/main/aboutThem.html">Purgatory Souls</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/sitepages/main/aboutThem.html/#howToAndWhyToPray">How to and Why to Pray</a>
+        <a class="nav-link" href="~sitepages/main/aboutThem.html/#howToAndWhyToPray">How to and Why to Pray</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#"></a>

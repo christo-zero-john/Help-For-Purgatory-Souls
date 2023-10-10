@@ -29,48 +29,48 @@
   
 /* font classes */
 .malayalam{
-    font-family: 'anek-ml',sans-serif;
+    font-family: 'anek-ml',sans-serif !important;
 }
 
 .english{
-    font-family: 'changa',sans-serif;
+    font-family: 'changa',sans-serif !important;
 }
 
 /* font-weights */
 .fw-100{
-    font-weight: 100;
+    font-weight: 100 !important;
 }
 .fw-200{
-    font-weight: 200;
+    font-weight: 200 !important;
 }
 .fw-300{
-    font-weight: 300;
+    font-weight: 300 !important;
 }
 .fw-400{
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 .fw-500{
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 .fw-600{
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 .fw-700{
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 .fw-800{
-    font-weight: 800;
+    font-weight: 800 !important;
 }
 .fw-900{
-    font-weight: 900;
+    font-weight: 900 !important;
 }
 .fw-1000{
-    font-weight: 1000;
+    font-weight: 1000 !important;
 }
 
 /* Common */
 .bold{
-  font-weight: 400;
+  font-weight: 400 !important;
 }
   
 
@@ -81,8 +81,8 @@
 body{
     padding: 0;
     margin: 0;
-    font-weight: 500;
     height: fit-content;
+    width: fit-content;
 }
 
   
@@ -144,17 +144,26 @@ body{
     padding: 2%;
 }
 
-.aboutThem{
-  padding: 5vw;
-}
-.aboutThem .mainHeading{
-  font-size: 2rem;
+.text-bold{
+  font-weight: 500;
 }
 
-.aboutThem h2{
-  font-size: 1.5rem;
+.aboutThem{
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+br{
+    line-height: 0.5rem;
+}
+
+.aboutThem .mainHead{
+  font-size: 1.5rem !important;
+  text-wrap: wrap;
+  word-wrap: normal;
 }
 
 .aboutThem p{
+  font-family: 'anek-ml',sans-serif;
   font-size: 1rem;
 }
