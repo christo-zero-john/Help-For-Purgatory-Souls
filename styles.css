@@ -68,11 +68,6 @@
     font-weight: 1000 !important;
 }
 
-/* Common */
-.bold{
-  font-weight: 400 !important;
-}
-  
 
 *{
     font-family: 'changa', sans-serif;
@@ -86,6 +81,10 @@ body{
     margin: 0;
     height: fit-content;
     width: fit-content;
+}
+
+header{
+  width: 100vw;
 }
 
   
