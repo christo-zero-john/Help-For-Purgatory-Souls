@@ -1,48 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Metadata -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Prayer Room</title>
+        <link rel="stylesheet" href="/styles.css" />
+    
+        <!-- Bootstrap core CSS -->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
 
-<!-- Bootstrap CSS v4.3.1-->
-    <link rel="stylesheet" href="/vendors/bootstrap-4.3.1/dist/css/bootstrap.min.css">
-
-<!-- User Defined CSS -->
-    <link rel="stylesheet" href="/resources/css/styles.css">
-<!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- Title -->
-    <title>Prayer Room</title>
-</head>
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="prayerRoomImg">
-                <img src="../../resources/img/PurgatorytoHeaven-2016-01-04-11_01_16.jpg" alt="">
+        
+        <!-- Header -->
+        <header class="site-header sticky-top py-1 english">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light text-danger">
+            <a href="../../index.html" class="d-md-none  text-secondary navHead">Help For Purgatory</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+            
+                    <li class="nav-item">
+                        <a class="nav-link navLink active" href="../../index.html">Home</a>
+                    </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link navLink" href="../../sitepages/main/prayerRoom.html">Prayer Room</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutThem.html/#home">Purgatory Souls</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutThem.html/#howToAndWhyToPray">How to and Why to Pray</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#"></a>
+                </li>
+                </ul>
             </div>
-            <div class="col-md-6 prayerForThem p-3 border border-success bg-secondary text-white">
-                <p class="malayalam">
-                    നിത്യനായ ദൈവമേ ഇന്നേദിവസം അർപ്പിക്കപ്പെടുന്ന എല്ലാ ബലികളോടും ചേർത്ത് അങ്ങേ പ്രിയപുത്രനായ ഈശോമിശിഹായുടെ തിരുരക്തം ശുദ്ധീകരണസ്ഥലത്തുള്ള ആത്മാക്കൾക്കായും ലോകമെങ്ങുമുള്ള പാപികൾക്കും സഭയിലുള്ള പാപികൾക്കും എന്റെ കുടുംബത്തിലെയും എന്റെ ഭവനത്തിലെയും പാപികൾക്കായും ഞാൻ കാഴ്ചസമർപ്പിക്കുന്നു <br><br>
-                        1.സ്വർഗ്ഗ. 1.നന്മ 1.ത്രിത്വ 
-                </p>
+            </nav>
+        </header>
+
+<!-- PrayeRoom MainBody -->
+        <div class="prayerRoom malayalam">
+            <h1 class="h2 fw-500 english prayerRoomHead text-center ">Prayer Room</h1>
+    <!-- prayerRoomNav -->
+            <div class="prayerRoomNav d-flex flex-column flex-md-row justify-content-center align-items-start p-1 card border-success my-2">
+                <a href="#novena" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark novena">നൊവേന</a>
+                <a href="#vanakkamaasam" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark vanakkmaasam">വണക്കമാസം</a>
+                
+                <a onclick="display(2)" href="#contentDiv" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark rosaryOfTheDivineMercy">കരുണക്കൊന്ത </a>
+                <a onclick="display(1)" href="#contentDiv" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark prayerOfThousand">ആയിരം ആത്മാക്കൾക്കായുള്ള പ്രാർത്ഥന</a>
             </div>
 
-            <div class="col-md-6 prayerToThem p-3 border border-danger bg-light text-dark">
-                <p class="malayalam">
-                    നിത്യനായ ദൈവമേ ഇന്നേദിവസം അർപ്പിക്കപ്പെടുന്ന എല്ലാ ബലികളോടും ചേർത്ത് അങ്ങേ പ്രിയപുത്രനായ ഈശോമിശിഹായുടെ തിരുരക്തം ശുദ്ധീകരണസ്ഥലത്തുള്ള ആത്മാക്കൾക്കായും ലോകമെങ്ങുമുള്ള പാപികൾക്കും സഭയിലുള്ള പാപികൾക്കും എന്റെ കുടുംബത്തിലെയും എന്റെ ഭവനത്തിലെയും പാപികൾക്കായും ഞാൻ കാഴ്ചസമർപ്പിക്കുന്നു <br><br>
-                        1.സ്വർഗ്ഗ. 1.നന്മ 1.ത്രിത്വ 
-                </p>
+        <!-- novena section -->
+            <div class="novenaSection" id="novena">
+                <div class="NovenaNav">
+                    <h1 class="malayalam h3 fw-500 text-center">നൊവേന</h1>
+                    <span onclick="novena(1)" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark">ഒന്നാം ദിനം </span>
+                    <span onclick="novena(2)" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark">രണ്ടാം ദിനം </span>
+                    <span onclick="novena(3)" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark">മൂന്നാം ദിനം </span>
+                    <span onclick="novena(4)" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark">നാലാം ദിനം </span>
+                    <span onclick="novena(5)" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark">അഞ്ചാം ദിനം </span>
+                    <span onclick="novena(6)" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark">ആറാം ദിനം </span>
+                    <span onclick="novena(7)" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark">ഏഴാം ദിനം </span>
+                    <span onclick="novena(8)" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark">എട്ടാം ദിനം </span>
+                    <span onclick="novena(9)" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark">ഒൻപതാം ദിനം </span>
+                </div>
+            </div>
+
+        <!-- vanakkmaasam section -->
+        <div class="vanakkmaasamSection" id="vanakkamaasam">
+            <h1 class="malayalam h3 fw-500 text-center">വണക്കമാസം</h1>
+            <p class="english fw-600 text-center mt-0 text-info">[November]</p>
+            <div class="vanakkmaasamNav">
+        <!-- vanakkammasam days -->
+                <span onclick="vanakkmaasam(1)" class="vanakkamaasamDay1 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">1</span>
+                <span onclick="vanakkmaasam(2)" class="vanakkamaasamDay2 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">2</span>
+                <span onclick="vanakkmaasam(3)" class="vanakkamaasamDay3 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">3</span>
+                <span onclick="vanakkmaasam(4)" class="vanakkamaasamDay4 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">4</span>
+                <span onclick="vanakkmaasam(5)" class="vanakkamaasamDay5 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">5</span>
+                <span onclick="vanakkmaasam(6)" class="vanakkamaasamDay6 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">6</span>
+                <span onclick="vanakkmaasam(7)" class="vanakkamaasamDay7 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">7</span>
+                <span onclick="vanakkmaasam(8)" class="vanakkamaasamDay8 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">8</span>
+                <span onclick="vanakkmaasam(9)" class="vanakkamaasamDay9 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">9</span>
+                <span onclick="vanakkmaasam(10)" class="vanakkamaasamDay10 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">10</span>
+                <span onclick="vanakkmaasam(11)" class="vanakkamaasamDay11 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">11</span>
+                <span onclick="vanakkmaasam(12)" class="vanakkamaasamDay12 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">12</span>
+                <span onclick="vanakkmaasam(13)" class="vanakkamaasamDay13 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">13</span>
+                <span onclick="vanakkmaasam(14)" class="vanakkamaasamDay14 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">14</span>
+                <span onclick="vanakkmaasam(15)" class="vanakkamaasamDay15 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">15</span>
+                <span onclick="vanakkmaasam(16)" class="vanakkamaasamDay16 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">16</span>
+                <span onclick="vanakkmaasam(17)" class="vanakkamaasamDay17 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">17</span>
+                <span onclick="vanakkmaasam(18)" class="vanakkamaasamDay18 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">18</span>
+                <span onclick="vanakkmaasam(19)" class="vanakkamaasamDay19 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">19</span>
+                <span onclick="vanakkmaasam(20)" class="vanakkamaasamDay20 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">20</span>
+                <span onclick="vanakkmaasam(21)" class="vanakkamaasamDay21 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">21</span>
+                <span onclick="vanakkmaasam(22)" class="vanakkamaasamDay22 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">22</span>
+                <span onclick="vanakkmaasam(23)" class="vanakkamaasamDay23 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">23</span>
+                <span onclick="vanakkmaasam(24)" class="vanakkamaasamDay24 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">24</span>
+                <span onclick="vanakkmaasam(25)" class="vanakkamaasamDay25 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">25</span>
+                <span onclick="vanakkmaasam(26)" class="vanakkamaasamDay26 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">26</span>
+                <span onclick="vanakkmaasam(27)" class="vanakkamaasamDay27 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">27</span>
+                <span onclick="vanakkmaasam(28)" class="vanakkamaasamDay28 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">28</span>
+                <span onclick="vanakkmaasam(29)" class="vanakkamaasamDay29 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">29</span>
+                <span onclick="vanakkmaasam(30)" class="vanakkamaasamDay30 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center   border-dark text-secondary ">30</span>
+            </div>
+                <div id="contentDiv" class=" my-2 m-md-4 p-2">
+                    
+
+
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- myScript -->
+    <script src="../../script.js"></script>
     <!-- Bootstrap JavaScript -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="/vendors/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+

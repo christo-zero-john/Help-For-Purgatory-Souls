@@ -14,6 +14,8 @@
   
 
   
+
+  
 /* Fonts */
 /* Anek-Malayalam */
 @font-face {
@@ -23,9 +25,10 @@
 
 /* Font-changa english */
 @font-face {
-    font-family: 'changa';
+    font-family: 'changaOff';
     src: url(../fonts/Changa/Changa-VariableFont_wght.ttf);
   }
+  @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap');
   
 /* font classes */
 .malayalam{
@@ -33,7 +36,7 @@
 }
 
 .english{
-    font-family: 'changa',sans-serif !important;
+    font-family: 'Changa','changaOff',sans-serif !important;
 }
 
 /* font-weights */
@@ -171,4 +174,29 @@ br{
   font-family: 'anek-ml',sans-serif;
   width: fit-content;
   max-width: 100vw;
+}
+
+/* prayer room */
+.vanakkmaasamSection span{
+  width: 30px;
+}
+
+.letterSpacing{
+    letter-spacing: 0.11rem;
+}
+
+.blockquote{
+    margin: 0;
+    border-left: 3px solid red;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    background-color: wheat;
+    width: fit-content;
+}
+.hr-default{
+    border: 1px solid #00000085;
+}
+
+#contentDiv{
+    scale: 0.9;
 }
