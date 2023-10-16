@@ -298,9 +298,9 @@ function novena(x){
     
     contentDiv.innerHTML = 
     `
-        <p class="malayalam fw-500 h5 text-wrap h4">നൊവേന</p>
-        <p class="english fw-500 h5 text-wrap h5">${data.novena[x-1].day}</p>
-        <p class="h5 letterSpacing">${data.novena[x-1].prayer}</p>
+        <p class="malayalam fw-500 text-wrap h2 text-center text-secondary">നൊവേന</p>
+        <p class="malayalam fw-500 text-wrap h5 text-center ">${data.novena[x-1].day}</p>
+        <p class="h5 letterSpacing malayalam">${data.novena[x-1].prayer}</p>
     `;
 
     console.log("novena day " + x +" loaded;");

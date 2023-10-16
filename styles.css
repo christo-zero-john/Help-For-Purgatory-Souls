@@ -199,8 +199,13 @@ br{
 
 #contentDiv{
   scale: 0.95;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
 }
 
 #contentDiv:nth-child(){
   font-family: 'anek-ml', sans-serif;
 }
+
