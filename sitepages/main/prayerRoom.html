@@ -56,15 +56,15 @@
             <h1 class="h2 fw-500 english prayerRoomHead text-center ">Prayer Room</h1>
     <!-- prayerRoomNav -->
             <div class="prayerRoomNav d-flex flex-column flex-md-row justify-content-center align-items-start p-1 card border-success my-2">
-                <a href="#novena" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark novena">നൊവേന</a>
-                <a href="#vanakkamaasam" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark vanakkmaasam">വണക്കമാസം</a>
+                <a onclick="prayerNav(1)" href="#novena" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark novena">നൊവേന</a>
+                <a onclick="prayerNav(2)" href="#vanakkamaasam" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark vanakkmaasam">വണക്കമാസം</a>
                 
                 <a onclick="display(2)" href="#contentDiv" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark rosaryOfTheDivineMercy">കരുണക്കൊന്ത </a>
                 <a onclick="display(1)" href="#contentDiv" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark prayerOfThousand">ആയിരം ആത്മാക്കൾക്കായുള്ള പ്രാർത്ഥന</a>
             </div>
 
         <!-- novena section -->
-            <div class="novenaSection" id="novena">
+            <div class="novenaSection d-none" id="novena">
                 <div class="NovenaNav">
                     <h1 class="malayalam h3 fw-500 text-center">നൊവേന</h1>
                     <span onclick="novena(1)" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark">ഒന്നാം ദിനം </span>
@@ -80,7 +80,7 @@
             </div>
 
         <!-- vanakkmaasam section -->
-        <div class="vanakkmaasamSection" id="vanakkamaasam">
+        <div class="vanakkmaasamSection d-none" id="vanakkamaasam">
             <h1 class="malayalam h3 fw-500 text-center">വണക്കമാസം</h1>
             <p class="english fw-600 text-center mt-0 text-info">[November]</p>
             <div class="vanakkmaasamNav">
@@ -115,15 +115,18 @@
                 <span onclick="vanakkmaasam(28)" class="vanakkamaasamDay28 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">28</span>
                 <span onclick="vanakkmaasam(29)" class="vanakkamaasamDay29 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">29</span>
                 <span onclick="vanakkmaasam(30)" class="vanakkamaasamDay30 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center   border-dark text-secondary ">30</span>
-            </div>
-                <div id="contentDiv" class="bg-light">
-                    <p class="p malayalam">
-                        വണക്കമാസം, കരുണക്കൊന്ത, ആയിരം ആത്മാക്കൾക്കായുള്ള പ്രാർത്ഥന എന്നിവയിലേതെങ്കിലും തിരഞ്ഞെടുക്കുക. . .  
-                    </p>
+            </div>   
+        </div>
 
+        <!-- content Division -->
+        <div id="contentDiv" class="bg-light d-block w-100">
+            <p class="p malayalam">
+                വണക്കമാസം, കരുണക്കൊന്ത, ആയിരം ആത്മാക്കൾക്കായുള്ള പ്രാർത്ഥന എന്നിവയിലേതെങ്കിലും തിരഞ്ഞെടുക്കുക. . .  
+            </p>
 
-                </div>
-            </div>
+            
+        </div>
+
         </div>
     </div>
 
