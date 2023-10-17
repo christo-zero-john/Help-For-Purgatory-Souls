@@ -316,9 +316,21 @@ var novenaEndingCommon = `
 -->
 
     <img class="novenaLuthiniya" src="../../resources/img/novenaLuthiniya.png" alt="Novena luthiniya">
-`;
 
-var NovenaLuthiniya = "ലുത്തിനിയ";
+    <p class="malayalam text-wrap text-left p p-2">
+        <span class="malayalam text-wrap text-left p fw-600">സുകൃതജപം:</span>
+        ഈശോയുടെ തിരുഹൃദയമേ അങ്ങേ തിരുരക്തത്താൽ ശുദ്ധീകരാത്മാക്കളെ കഴുകി വിശുദ്ധീകരിച്ചു രക്ഷിക്കണമേ 
+    </p>
+
+    <ul class="text-center">
+                <li  class="d-inline px-2 fw-800">*</li>
+                <li  class="d-inline px-2 fw-800">*</li>
+                <li  class="d-inline px-2 fw-800">*</li>
+                <li  class="d-inline px-2 fw-800">*</li>
+                <li  class="d-inline px-2 fw-800">*</li>
+            </ul>
+
+`;
 
 var vanakkamaasamLuthiniya = "ലുത്തിനിയ";
 
