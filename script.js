@@ -261,7 +261,7 @@ var data = {
   ]
 };
 
-var common = ``
+var vanakkamaasamCommonEnding = "ലുത്തിനിയ ";
 
 var contentDiv = document.getElementById("contentDiv");
 var Novena  = document.getElementById("novena");
@@ -416,7 +416,7 @@ function novena(x){
   }
 
 
-  function vanakkmaasam(x){
+function vanakkmaasam(x){
     contentDiv.innerHTML = 
     `
         <div class="vanakkamaasamDaysDiv">
@@ -450,7 +450,7 @@ function novena(x){
 
             <p class="h5 malayalam">ലുത്തിനിയ</p>
             <p class="" id="vanakkamasamConclution">
-                ${luthiniya}
+                ${vanakkamaasamCommonEnding}
             </p>
 
             <hr class="hr-default">
