@@ -64,7 +64,10 @@
                 
                 <a onclick="display(2)" href="#contentDiv" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark rosaryOfTheDivineMercy">കരുണക്കൊന്ത </a>
                 <a onclick="display(1)" href="#contentDiv" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark prayerOfThousand">ആയിരം ആത്മാക്കൾക്കായുള്ള പ്രാർത്ഥന</a>
+
+                <a onclick="japamala()" href="#contentDiv" class="malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-left border-dark prayerOfThousand">ശുദ്ധീകരാത്മാക്കൾക്കായുള്ള ജപമാല</a>
             </div>
+
 
         <!-- novena section -->
             <div class="novenaSection d-none" id="novena">
@@ -86,7 +89,7 @@
         <div class="vanakkmaasamSection d-none" id="vanakkamaasam">
             <h1 class="malayalam h3 fw-500 text-center">വണക്കമാസം</h1>
             <p class="english fw-600 text-center mt-0 text-info">[November]</p>
-            <div class="vanakkmaasamNav p-1">
+            <div class="vanakkmaasamNav py-2 py-md-4 ">
         <!-- vanakkammasam days -->
                 <span onclick="vanakkmaasam(1)" class="vanakkamaasamDay1 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">1</span>
                 <span onclick="vanakkmaasam(2)" class="vanakkamaasamDay2 malayalam btn btn-outline-dark p-2 mx-md-2 my-1 text-center border-dark">2</span>
@@ -121,20 +124,22 @@
             </div>   
         </div>
 
+
         <!-- content Division -->
         <div id="contentDiv" class="bg-light d-block w-100">
-            <p class="p malayalam">
+            <p class="p malayalam  mt-2 p-3">
                 വണക്കമാസം, കരുണക്കൊന്ത, ആയിരം ആത്മാക്കൾക്കായുള്ള പ്രാർത്ഥന എന്നിവയിലേതെങ്കിലും തിരഞ്ഞെടുക്കുക. . .  
             </p>
 
-           
-
+            
             
         </div>
 
         </div>
     </div>
 
+<!-- karunakontha audio -->
+    <audio class="d-none" src="../../resources/aud/rosaryOfTheDivineMercy.mp3" id="audio"></audio>
     <!-- myScript -->
     <script src="../../script.js"></script>
     <!-- Bootstrap JavaScript -->
