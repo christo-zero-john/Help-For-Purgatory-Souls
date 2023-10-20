@@ -346,3 +346,7 @@ br{
     display: inline-block;
     scale: 1.5;
 }
+
+.footerThumb{
+  width: 20px;
+}
