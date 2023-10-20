@@ -39,6 +39,123 @@
     font-family: 'Changa','changaOff',sans-serif !important;
 }
 
+/* widths */
+.wd-100{
+  width: 100vw;
+}
+
+.wd-75{
+  width: 75vw;
+}
+
+.wd-50{
+  width: 50vw;
+}
+
+.wd-25{
+  width: 25vw;
+}
+
+.wd-10{
+  width: 10vw;
+}
+
+
+.wd-20{
+  width:20vw;
+}
+
+.wd-30{
+  width: 30vw;
+}
+
+.wd-40{
+  width: 40vw;
+}
+
+.wd-50{
+  width: 50vw;
+}
+
+.wd-60{
+  width: 60vw;
+}
+
+.wd-70{
+  width: 70vw;
+}
+
+.wd-80{
+  width: 80vw;
+}
+
+.wd-90{
+  width: 90vw;
+}
+
+
+.w-fit{
+  width: fit-content;
+}
+
+/* heights */
+.hd-100{
+  height: 100vw;
+}
+
+.hd-75{
+  height: 75vw;
+}
+
+.hd-50{
+  height: 50vw;
+}
+
+.hd-25{
+  height: 25vw;
+}
+
+.hd-10{
+  height: 10vw;
+}
+
+.hd-20{
+  height:20vw;
+}
+
+.hd-30{
+  height: 30vw;
+}
+
+.hd-40{
+  height: 40vw;
+}
+
+.hd-50{
+  height: 50vw;
+}
+
+.hd-60{
+  height: 60vw;
+}
+
+.hd-70{
+  height: 70vw;
+}
+
+.hd-80{
+  height: 80vw;
+}
+
+.hd-90{
+  height: 90vw;
+}
+
+.h-fit{
+  height: fit-content;
+}
+
+
 /* font-weights */
 .fw-100{
     font-weight: 100 !important;
@@ -199,7 +316,7 @@ br{
 
 .vanakkmaasamNav span{
   min-width: 35px;
-  minheight: 35px;
+  min-height: 35px;
 }
 
 #contentDiv{
@@ -217,3 +334,16 @@ br{
   object-fit: cover;
 }
 
+.mainGridImg{
+    width: 23vw;
+    border: 1px solid;
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+
+.mainGridImg:hover{
+    position: relative;
+    display: inline-block;
+    scale: 1.5;
+    
+}
