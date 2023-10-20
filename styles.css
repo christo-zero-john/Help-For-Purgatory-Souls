@@ -229,8 +229,18 @@ header{
 }
 
 .hero{
-  min-height: 88vh;
+  min-height: 100vh;
   font-weight: 600;
+}
+
+.heroBgIndex{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.6;
+  object-fit: cover;
+  object-position: center;
 }
 
 .heroHead{
