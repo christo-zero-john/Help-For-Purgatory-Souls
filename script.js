@@ -335,7 +335,19 @@ var novenaEndingCommon = `
 
 `;
 
-var vanakkamaasamLuthiniya = "ലുത്തിനിയ";
+var vanakkamaasamLuthiniya = `
+    <div class="vanakkamaasamLuthiniya">
+    <img src="../../resources/img/vanakkamaasamLuthiniya/1.jpeg" alt="" class="">
+    <img src="../../resources/img/vanakkamaasamLuthiniya/2.jpeg" alt="" class="">
+    <img src="../../resources/img/vanakkamaasamLuthiniya/3.jpeg" alt="" class="">
+    <img src="../../resources/img/vanakkamaasamLuthiniya/4.jpeg" alt="" class="">
+    <img src="../../resources/img/vanakkamaasamLuthiniya/5.jpeg" alt="" class="">
+    <img src="../../resources/img/vanakkamaasamLuthiniya/5.jpeg" alt="" class="">
+    <img src="../../resources/img/vanakkamaasamLuthiniya/7.jpeg" alt="" class="">
+    <img src="../../resources/img/vanakkamaasamLuthiniya/8.jpg" alt="" class="">
+    </div>
+
+`;
 
 
 console.log(data);
@@ -459,7 +471,7 @@ function vanakkmaasam(x){
 
             <p class="h5 malayalam">ലുത്തിനിയ</p>
             <p class="malayalam text-wrap text-break" id="vanakkamasamConclution">
-                ${vanakkamaasamCommonEnding}
+                ${vanakkamaasamLuthiniya}
             </p>
 
             <hr class="hr-default">

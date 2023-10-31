@@ -360,3 +360,7 @@ br{
 .footerThumb{
   width: 20px;
 }
+
+.vanakkamaasamLuthiniya img{
+  max-width: 100%;
+}
