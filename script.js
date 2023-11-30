@@ -1,4 +1,12 @@
 
+var vanakkamaasamCommonEnding = "ലുത്തിനിയ ";
+
+var contentDiv = document.getElementById("contentDiv");
+var audio = document.getElementById("audio");
+
+var Novena  = document.getElementById("novena");
+var vanakkamaasam  = document.getElementById("vanakkamaasam");
+var y = 0;
 var data = {
   novena:[
       {
@@ -261,16 +269,6 @@ var data = {
   ]
 };
 
-
-var vanakkamaasamCommonEnding = "ലുത്തിനിയ ";
-
-var contentDiv = document.getElementById("contentDiv");
-var audio = document.getElementById("audio");
-
-var Novena  = document.getElementById("novena");
-var vanakkamaasam  = document.getElementById("vanakkamaasam");
-var y = 0;
-
 var novenaStartingCommon = `
 
     <p class="malayalam fw-500 text-wrap text-center h4">പ്രാരംഭപ്രാർത്ഥന</p>
@@ -349,8 +347,10 @@ var vanakkamaasamLuthiniya = `
 
 `;
 
-
 console.log(data);
+
+
+
 
 function prayerNav(x){
     console.log("y = "+y);
